@@ -1,0 +1,12 @@
+<div class="pagination">
+    <button type="button" (click)="onPageChange(currentPage - 1)" [disabled]="currentPage === 1"
+        class="btn previous">Previous</button>
+    <select #page (change)="goToPage(page.value)" class="dropdown">
+        <option *ngFor="let page of pageNumbers" [value]="page">{{ page }}</option>
+    </select>
+    <button type="button" (click)="onPageChange(currentPage + 1)" [disabled]="currentPage === totalPages"
+        class="btn next">Next</button>
+</div>
+<div class="page-info">
+    Page {{ currentPage }} of {{ totalPages }}
+</div>

@@ -1,0 +1,56 @@
+.pagination {
+    float: right;
+}
+
+.page-info {
+    float: left;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.btn {
+    width: 150px;
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 0.5em;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.btn:disabled {
+    opacity: 0.2;
+}
+
+.previous {
+    color: #544848;
+    border-color: #544848;
+    background-color: #fafafa;
+}
+
+.previous:not(:disabled):hover {
+    background-color: #796565;
+    color: white;
+    border-color: #796565;
+}
+
+.next {
+    background-color: #796565;
+    border-color: #796565;
+    color: white;
+    opacity: 0.6;
+}
+
+.next:not(:disabled):hover {
+    background-color: #544848;
+    color: #fafafa;
+    border-color: #544848;
+    opacity: 1;
+}
+
+.dropdown {
+    width: 40px;
+    height: 30px;
+    border-radius: 0.5em;
+    color: #544848;
+    border-color: #544848;
+}
